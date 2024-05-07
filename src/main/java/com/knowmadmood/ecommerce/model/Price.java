@@ -3,7 +3,6 @@ package com.knowmadmood.ecommerce.model;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -12,7 +11,7 @@ import java.time.LocalDateTime;
 
 @Data
 @Entity
-@Table(name="PRICES")
+@Table(name = "PRICES")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Price {

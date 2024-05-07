@@ -24,7 +24,7 @@ class PriceServiceImplTests {
     private PriceServiceImpl priceService;
 
     @Test
-    public void testGetPriceForProductAndBrandAndDate_Success() {
+    void testGetPriceForProductAndBrandAndDate_Success() {
         String startDate = "2024-05-06T10:00:00";
         String endDate = "2020-12-31T23:59:59";
         LocalDateTime startLocalDateTime = LocalDateTime.parse(startDate);

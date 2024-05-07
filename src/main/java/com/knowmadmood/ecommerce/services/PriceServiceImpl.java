@@ -17,6 +17,6 @@ public class PriceServiceImpl implements PriceService {
 
     @Override
     public Price getPriceForProductAndBrandAndDate(Long brandId, Long productId, LocalDateTime startDate) {
-       return priceRepository.findFirstByBrandIdAndProductIdAndAndStartDate(brandId, productId, startDate);
+        return priceRepository.findFirstByBrandIdAndProductIdAndAndStartDate(brandId, productId, startDate);
     }
 }

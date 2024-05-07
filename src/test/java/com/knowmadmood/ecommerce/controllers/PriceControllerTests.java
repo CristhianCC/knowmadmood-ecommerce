@@ -30,7 +30,7 @@ class PriceControllerTests {
     private PriceController priceController;
 
     @Test
-    public void testGetPrice_Success() throws Exception {
+    void testGetPrice_Success() throws Exception {
         String startDate = "2024-05-06T10:00:00";
         String endDate = "2020-12-31T23:59:59";
         LocalDateTime startLocalDateTime = LocalDateTime.parse(startDate);
@@ -52,7 +52,7 @@ class PriceControllerTests {
     }
 
     @Test
-    public void testGetPriceNotFound_thenReturnNotFoundStatus() throws Exception {
+    void testGetPriceNotFound_thenReturnNotFoundStatus() throws Exception {
         when(priceService.getPriceForProductAndBrandAndDate(anyLong(), anyLong(), any(LocalDateTime.class)))
                 .thenReturn(new Price());
 
